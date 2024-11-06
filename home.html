@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" href="s.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+	<head>
+		
+	<div class="navbar">
+		<nav>
+        <div class="logo"><a href="home.html"><img src="Images/logo.png" class="logo" alt="logo"></a></div>
+        <ul>
+         <li><a href="#"><i class="fa fa-fw fa-home"></i>Home</a></li> 
+          <li><a href="#"><i class="fa fa-fw fa-info"></i>About</a> </li>
+          <li><a href="#"><i class="fa fa-fw fa-image"></i>Gallery</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-wrench"></i>Facilities</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-address-book"></i>Contact</a> </li>
+		  
+         </ul>
+		 <button type="button">REGISTER</button>
+	</nav>
+	</div>
+	</head>
+
+		<div class="content">
+			
+<div class="swiper">
+	
+	<div class="swiper-wrapper">
+	  
+	  <div class="swiper-slide"><img src="Images/swimming pool.jpeg"></div>
+	  <div class="swiper-slide"><img src="Images/junior king 2.jpeg"></div>
+	  <div class="swiper-slide"><img src="Images/superior twin 2.jpeg"></div>
+		<div class="swiper-slide"><img src="Images/outdoor area .jpeg"></div>
+		<div class="swiper-slide"><img src="Images/restaurant.jpeg"></div>
+		<div class="swiper-slide"><img src="Images/swimming pool sunset.jpeg"></div>
+	  
+	</div>
+	
+	<div class="swiper-pagination"></div>
+  
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		
+<script>
+	const swiper = new Swiper('.swiper', {
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
+		direction:'horizontal',
+		loop: true,
+		pagination: {
+    	el: '.swiper-pagination',
+		clickable: true,
+  },
+
+  		navigation: {
+    	nextEl: '.swiper-button-next',
+    	prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
+
+<section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1> <span>Book </span> Your Rooms </h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+			<label for="arrival date">Arrival Date</label>
+			<label for="departure date">Departure Date</label>
+			<label for="adults">Room Type</label>
+			<label for="children">Extra Bed</label>
+			<label for="submit">Submit</label>
+          <input type="date" placeholder="Arrival Date">
+		  <input type="date" placeholder="Departure Date">
+		  <input list="Rooms" placeholder="Rooms">
+		  <datalist id="Rooms">
+
+			<div class="select">
+			<option selected disabled>choose room type</option>
+
+			<option value="Junior King"></option>
+			<option value="Superior Twin"></option>
+			<option value="Superior King"></option>
+			<option value="Junior Twin"></option>
+			</select>
+			</div>
+			
+		  </datalist>
+		  <input type="number" min="0" max="2" placeholder="Extra Bed">
+		 <input type="submit" value="CHECK AVAILABILITY">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="about top">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h1>WELCOME TO </h1>
+		  <h2>ROYAL LAKE VIEW</h2>
+        </div>
+        <p>Located on the beautiful and peaceful Inle Lake in Myanmar, Royal Lake View offers accommodations with lake, garden or hill views. Free Wi-Fi access is available throughout the resort.
+			The spacious suites and villas features a contemporary style with a touch of traditional Myanmar. Each comes with a private balcony along with separate living room, and private bathroom with shower and bathtub. All rooms are fully-equipped with individual air conditioning, flat-screen satellite TV, safety box, mini-bar and tea/coffee making facilities.</p>
+        <button class="button">ABOUT US</button>
+      </div>
+      <div class="right">
+        <img src="Images/reception.jpeg" class="reception" alt="">
+      </div>
+    </div>
+  </section>
+			
+
+</body>
+</html>
